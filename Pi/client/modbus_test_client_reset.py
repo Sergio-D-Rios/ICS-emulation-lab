@@ -17,8 +17,8 @@ def run_client():
     client = ModbusClient(host='10.190.27.206', port=502)
     client.connect()
 
-    log.debug("Exploiting Coil 1")
-    coil = client.write_coil(1, 0, unit=UNIT)
+    log.debug("Fixing Coil 1")
+    coil = client.write_coil(1, 1, unit=UNIT)
     print(dir(coil))
     print(coil.function_code)
     print(coil.protocol_id)

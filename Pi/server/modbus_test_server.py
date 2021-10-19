@@ -31,7 +31,7 @@ def run_server():
     identity.ModelName = "Modbus Test Server"
 
     # Initialize and start the server
-    StartTcpServer(context, identity=identity, address=("",5020))
+    StartTcpServer(context, identity=identity, address=("",502))
 
 
 if __name__ == "__main__":
