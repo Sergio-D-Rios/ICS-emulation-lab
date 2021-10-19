@@ -21,7 +21,7 @@ traffic_light = {
 }
 
 def run_client():
-    client = ModbusClient(host='localhost', port=502)
+    client = ModbusClient(host='10.190.27.206', port=502)
     client.connect()
 
     curr_color = "green"
